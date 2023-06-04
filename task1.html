@@ -1,44 +1,53 @@
-<!DOCTYPE html>
 <html>
+
 <head>
-<style>
-table, th, td {
-  border: 1px solid white;
-  border-collapse: collapse;
-}
-th, td {
-  padding: 5px;
-  text-align: left;
-}
-table {
-  width: 100%;    
-  background-color: powderblue;
-}
-</style>
+    <title>Cell Table</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .cell {
+            border: 2px solid blue;
+            background-color: yellow;
+            color: black;
+            text-align: center;
+        }
+    </style>
 </head>
+
 <body>
 
-<table style="width:100%">
-  <tr>
-    <th>Firstname</th>
-    <th>Lastname</th> 
-    <th>Age</th>
-  </tr>
-  <tr>
-    <td>warner</td>
-    <td>kumar</td>
-    <td>21</td>
-  </tr>
-  <tr>
-    <td>kohli</td>
-    <td>naidu</td>
-    <td>94</td>
-  </tr>
-  <tr>
-    <td>rahul</td>
-    <td>chow</td>
-    <td>80</td>
-  </tr>
-</table>
-</head>
+    <div class="container mt-5">
+        <table class="table">
+            <tbody>
+                <tr>
+                    <td class="cell" colspan="1">Span 1</td>
+                    <td class="cell" colspan="1">Span 2</td>
+                    <td class="cell" colspan="1">Span 3</td>
+                    <td class="cell" colspan="1">Span 4</td>
+                    <td class="cell" colspan="1">Span 5</td>
+                    <td class="cell" colspan="1">Span 6</td>
+                    <td class="cell" colspan="1">Span 7</td>
+                    <td class="cell" colspan="1">Span 8</td>
+                    <td class="cell" colspan="1">Span 9</td>
+                    <td class="cell" colspan="1">Span 10</td>
+                    <td class="cell" colspan="1">Span 11</td>
+                    <td class="cell" colspan="1">Span 12</td>
+                </tr>
+                <tr>
+                    <td class="cell" colspan="4">Span 4</td>
+                    <td class="cell" colspan="4">Span 4</td>
+                    <td class="cell" colspan="4">Span 4</td>
+                </tr>
+                <tr>
+                    <td class="cell" colspan="4">Span 4</td>
+                    <td class="cell" colspan="8">Span 8</td>
+                </tr>
+                <tr>
+                    <td class="cell" colspan="12">Span 12</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+
 </html>

@@ -1,29 +1,127 @@
-
+<!DOCTYPE html>
 <html>
+
 <head>
-<style>
-table, th, td {
-  border: 1px solid black;
-  border-collapse: collapse;
-}
-table {
-  width: 100%;    
-  background-color: gold;
-}
-</style>
+    <title>Pricing Table</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        .pricing-table {
+            margin-top: 50px;
+        }
+
+        .pricing-table .card {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .pricing-table .card-header {
+            background-color: #f2f2f2;
+            text-align: center;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .pricing-table .card-body {
+            text-align: center;
+        }
+
+        .pricing-table .card-title {
+            font-size: 32px;
+            margin-top: 20px;
+            color: #333;
+        }
+
+        .pricing-table .card-subtitle {
+            font-size: 18px;
+            margin-bottom: 20px;
+            color: #666;
+        }
+
+        .pricing-table .list-group-item {
+            border: none;
+            padding: 5px 0;
+            color: #666;
+        }
+
+        .pricing-table .btn {
+            margin-top: 20px;
+            background-color: #333;
+            color: #fff;
+            border-color: #333;
+        }
+
+        .pricing-table .btn:hover {
+            background-color: #555;
+            border-color: #555;
+        }
+    </style>
 </head>
+
 <body>
-
-<table>
-  <tr>
-    <td>
-
-<p> Click any of the following links </p>
-<p><a href= #> new page | </a> <a href = #> self open | </a> <a href=#> parent open | </a> <a href=#> Body open </a></p>
-</td> 
-</tr>
-</table>
+    <h1>Pricing</h1>
+    <div class="container">
+        <div class="row pricing-table">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Free</h3>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title">$0/month</h4>
+                        <h6 class="card-subtitle">Up to 10 users</h6>
+                        <ul class="list-group">
+                            <li class="list-group-item">2GB Storage</li>
+                            <li class="list-group-item">Email Support</li>
+                            <li class="list-group-item">Phone Support</li>
+                            <li class="list-group-item">Help Center Access</li>
+                        </ul>
+                        <a href="#" class="btn btn-primary">Sign up for free</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Pro</h3>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title">$15/month</h4>
+                        <h6 class="card-subtitle">Up to 20 users</h6>
+                        <ul class="list-group">
+                            <li class="list-group-item">10GB Storage</li>
+                            <li class="list-group-item">Email Support</li>
+                            <li class="list-group-item">Phone Support</li>
+                            <li class="list-group-item">Help Center Access</li>
+                        </ul>
+                        <a href="#" class="btn btn-primary">Get started</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Enterprise</h3>
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title">$29/month</h4>
+                        <h6 class="card-subtitle">Up to 30 users</h6>
+                        <ul class="list-group">
+                            <li class="list-group-item">15GB Storage</li>
+                            <li class="list-group-item">Email Support</li>
+                            <li class="list-group-item">Phone Support</li>
+                            <li class="list-group-item">Help Center Access</li>
+                        </ul>
+                        <a href="#" class="btn btn-primary">Contact us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
-
-

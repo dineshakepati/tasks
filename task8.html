@@ -1,132 +1,127 @@
-<html>
+
+<html lang="en">
+
 <head>
-<style>
-body {
-  font-family: Arial, sans-serif;
-}
-h1 {
-color: darkblue;
-font-size: 24px;
-}
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap Form Validation</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
+    <style>
+        :root {
+            --main-color: red; /* Change the main color here */
+            --bg-color: #f2f2f2; /* Change the background color here */
+            --form-max-width: 400px; /* Change the maximum width of the form container here */
+        }
 
-table {
-border: 1px solid black;
-margin: 0 auto;
-background-color: #FFFFFF;
-}
+        .error {
+            color: var(--main-color);
+        }
 
-th, td {
-padding: 10px;
-}
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: var(--bg-color);
+        }
 
-input[type="text"], input[type="email"], input[type="password"], input[type="radio"], input[type="checkbox"], select, textarea {
-width: 100%;
-padding: 5px;
-}
+        .container {
+            max-width: var(--form-max-width);
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
 
-textarea {
-resize: vertical;
-}
+        .form-group {
+            margin-bottom: 20px;
+        }
 
-button.registerbtn {
-background-color: #4CAF50;
-color: white;
-padding: 10px 20px;
-border: none;
-cursor: pointer;
-font-size: 16px;
-}
+        .form-group label {
+            font-weight: bold;
+        }
 
-a:link, a:visited {
-color: blue;
-text-decoration: none;
-}
+        .form-control {
+            width: 100%;
+            padding: 8px;
+        }
 
-a:hover, a:active {
-color: red;
-}
-</style>
+        .btn {
+            background-color: var(--main-color);
+        }
 
+        .btn-primary {
+            width: 100%;
+        }
+    </style>
 </head>
+
 <body>
-<form method="" action="">
-<table border="1" align="center" width="400">
-<caption> <h1> Registration Form </h1></caption> 
-<tr>
-<th>First Name</th>
-<td><input type="text" name="fn" id="fn1" maxlength="10"</td>
-</tr>
-<tr>
-<th>Last Name</th>
-<td><input type="text" name="ln"></td>
-</tr>
-<tr>
-<th>Email</th>
-<td><input type="email" name="email"></td>
-</tr>
-<tr>
-<th>Password</th>
-<td><input type="password" name="password"></td>
-</tr>
-<tr>
-<th>Re-enter Password</th>
-<td><input type="password" name="confirm_password"></td>
-</tr>
-<tr>
-<th>Gender:</th>
-<td>
-Male<input type="radio" name="gender" value="male">
-Female<input type="radio" name="gender" value="female">
-</td>
-</tr>
-<tr>
-<th>Age:</th>
-<td><input type="number" name="age"></td>
-</tr>
-<tr>
-<th>Phone Number</th>
-<td><input type="tel" name="phone"></td>
-</tr>
-<tr>
-<th>Address</th>
-<td><textarea rows="8" cols="20" name="address"></textarea></td>
-</tr>
-<tr>
-<th>State</th>
-<td><input type="text" name="state"></td>
-</tr>
-<tr>
-<th>Country</th>
-<td>
-<select name="country">
-<option value="" selected disabled>Choose your country</option>
-<option value="1">India</option>
-<option value="2">Pakistan</option>
-</select>
-</td>
-</tr>
-<tr>
-<th>Languages Known</th>
-<td>
-English<input type="checkbox" name="languages[]" value="English">
-Kannada<input type="checkbox" name="languages[]" value="Kannada">
-Hindi<input type="checkbox" name="languages[]" value="Hindi">
-Telugu<input type="checkbox" name="languages[]" value="Telugu">
-</td>
-</tr>       
-<tr>
-<th>
-<input type="checkbox" name="declaration" id="declaration" value="true">Hereby I declare that all given details are true
-</th>
-</tr>
-<tr>
-<th>
-Login to <a href="https://www.example.com">Ethnus</a> website
-</th>
-</tr>
-</table>
-<br><br>
-<button type="submit" class="registerbtn">Register</button>
-</form>
+    <div class="container mt-5">
+        <form id="myForm" class="needs-validation" novalidate>
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" class="form-control border" id="name" required />
+                <div class="error">Name is required.</div>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control border" id="email" required />
+                <div class="error">Email is required.</div>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" class="form-control border" id="password" required />
+                <div class="error">Password is required.</div>
+            </div>
+            <div class="form-group">
+                <label for="hobbies">Hobbies:</label>
+                <select class="form-control" id="hobbies" required>
+                    <option value="">Select a hobby</option>
+                    <option value="reading">Reading</option>
+                    <option value="gardening">Gardening</option>
+                    <option value="painting">Painting</option>
+                    <option value="cooking">Cooking</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script>
+        (function() {
+            "use strict";
+            window.addEventListener(
+                "load",
+                function() {
+                    var forms = document.getElementsByClassName("needs-validation");
+                    var validation = Array.prototype.filter.call(
+                        forms,
+                        function(form) {
+                            form.addEventListener(
+                                "submit",
+                                function(event) {
+                                    if (form.checkValidity() === false) {
+                                        event.preventDefault();
+                                        event.stopPropagation();
+                                    }
+                                    form.classList.add("was-validated");
+                                },
+                                false
+                            );
+                        }
+                    );
+                },
+                false
+            );
+        })();
+    </script>
 </body>
+
 </html>

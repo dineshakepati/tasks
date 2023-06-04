@@ -1,37 +1,145 @@
-<form action="action_page.php">
-  <div class="container">
-    <hr>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap Boxes</title>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+    <style>
+      :root {
+        --main-color: #007bff; /* Change the main color here */
+        --secondary-color: #6c757d; /* Change the secondary color here */
+        --box-padding: 15px; /* Change the box padding here */
+        --box-margin: 20px; /* Change the box margin here */
+        --box-background-color: #f8f9fa; /* Change the box background color here */
+        --box-border-color: #ddd; /* Change the box border color here */
+        --box-info-color: #555; /* Change the box info text color here */
+        --box-button-background-color: #dc3545; /* Change the box button background color here */
+        --box-button-color: #fff; /* Change the box button text color here */
+      }
 
-    <label for="fullname"><b>Full Name: </b></label>
-    <input type="text" placeholder=" rahul dravid" name="fname" id="fname" required>
-<br> <br>
-<label for="Username"><b> Username: </b></label>
-    <input type="text" placeholder=" cricket" name="Uname" id="Uname" required>
-<br> <br>
+      .main {
+        margin: 100px;
+      }
 
-    <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="********" name="psw" id="psw" required>
-<br> <br>
+      .line {
+        width: 100%;
+        border: 1px solid var(--secondary-color);
+      }
 
-    <label for="psw-repeat"><b>Re Password</b></label>
-    <input type="password" placeholder="********" name="psw-repeat" id="psw-repeat" required>
-<br> <br>
+      .box {
+        border: 1px solid var(--box-border-color);
+        border-radius: 5px;
+        padding: var(--box-padding);
+        margin-bottom: var(--box-margin);
+        background-color: var(--box-background-color);
+      }
 
-<label for="Address"><b>Address:</b></label>
-    <input type="text" placeholder="mumbai,india" name="address" id="address" required>
-<br> <br>
-<label for="Age"><b>Age: </b></label>
-    <input type="text" placeholder="28" name="age" id="age" required>
-<br> <br>
-<label> <b> Gender:</b></label>  
-<select>  
-<option value="Male"> Male</option>  
-<option value="Female">Female</option>     
-</select>  
-  <br> <br>
-    
-<button type="submit" class="registerbtn">Save</button>
-  </div>
+      .box img {
+        max-width: 100%;
+        height: auto;
+      }
 
-  
-</form>
+      .box-info {
+        margin-bottom: 10px;
+        color: var(--box-info-color);
+      }
+
+      .box-line {
+        border-top: 1px solid var(--box-border-color);
+        margin: var(--box-margin) 0;
+      }
+
+      .box-buttons {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 100px;
+      }
+
+      .box-buttons button {
+        padding: 10px 20px;
+        border: none;
+        background-color: var(--box-button-background-color);
+        color: var(--box-button-color);
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="main">
+      <hr class="line" />
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="box">
+            <img src="https://via.placeholder.com/500x300" alt="Picture" />
+            <div class="box-info">
+              <p>
+                Cards for display in portfolio style material design by Google.
+              </p>
+            </div>
+            <hr class="box-line" />
+            <div class="box-buttons">
+              <button>LINK</button>
+              <button>LINK</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="box">
+            <img src="https://via.placeholder.com/500x300" alt="Picture" />
+            <div class="box-info">
+              <p>
+                Cards for display in portfolio style material design by Google.
+              </p>
+            </div>
+            <hr class="box-line" />
+            <div class="box-buttons">
+              <button>LINK</button>
+              <button>LINK</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="box">
+            <img src="https://via.placeholder.com/500x300" alt="Picture" />
+            <div class="box-info">
+              <p>
+                Cards for display in portfolio style material design by Google.
+              </p>
+            </div>
+            <hr class="box-line" />
+            <div class="box-buttons">
+              <button>LINK</button>
+              <button>LINK</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="box">
+            <img src="https://via.placeholder.com/500x300" alt="Picture" />
+            <div class="box-info">
+              <p>
+                Cards for display in portfolio style material design by Google.
+              </p>
+            </div>
+            <hr class="box-line" />
+            <div class="box-buttons">
+              <button>LINK</button>
+              <button>LINK</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  </body>
+</html>
