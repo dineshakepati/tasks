@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    :root {
+        --font-family: Arial, sans-serif; /* Change the font family here */
+        --main-color: blue; /* Change the main color here */
+        --bg-color: gray; /* Change the background color here */
+        --active-bg-color: rgb(101, 101, 101); /* Change the active background color here */
+        --active-text-color: white; /* Change the active text color here */
+    }
+    
+    h1 {
+        text-align: left;
+        font-family: var(--font-family);
+    }
+    
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: var(--bg-color);
+    }
+    
+    li {
+        float: left;
+    }
+    
+    li a {
+        display: block;
+        color: var(--main-color);
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-family: var(--font-family);
+    }
+    
+    li a.active {
+        background-color: var(--active-bg-color);
+        color: var(--active-text-color);
+    }
+</style>
+
+<body>
+    <h1>Horizontal Navigation Bar</h1>
+    <ul>
+        <li><a class="active" href="#">Home</a></li>
+        <li><a href="#">Java</a></li>
+        <li><a href="#">HTML</a></li>
+        <li><a href="#">CSS</a></li>
+    </ul>
+</body>
+</html>
