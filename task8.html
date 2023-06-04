@@ -1,0 +1,132 @@
+<html>
+<head>
+<style>
+body {
+  font-family: Arial, sans-serif;
+}
+h1 {
+color: darkblue;
+font-size: 24px;
+}
+
+table {
+border: 1px solid black;
+margin: 0 auto;
+background-color: #FFFFFF;
+}
+
+th, td {
+padding: 10px;
+}
+
+input[type="text"], input[type="email"], input[type="password"], input[type="radio"], input[type="checkbox"], select, textarea {
+width: 100%;
+padding: 5px;
+}
+
+textarea {
+resize: vertical;
+}
+
+button.registerbtn {
+background-color: #4CAF50;
+color: white;
+padding: 10px 20px;
+border: none;
+cursor: pointer;
+font-size: 16px;
+}
+
+a:link, a:visited {
+color: blue;
+text-decoration: none;
+}
+
+a:hover, a:active {
+color: red;
+}
+</style>
+
+</head>
+<body>
+<form method="" action="">
+<table border="1" align="center" width="400">
+<caption> <h1> Registration Form </h1></caption> 
+<tr>
+<th>First Name</th>
+<td><input type="text" name="fn" id="fn1" maxlength="10"</td>
+</tr>
+<tr>
+<th>Last Name</th>
+<td><input type="text" name="ln"></td>
+</tr>
+<tr>
+<th>Email</th>
+<td><input type="email" name="email"></td>
+</tr>
+<tr>
+<th>Password</th>
+<td><input type="password" name="password"></td>
+</tr>
+<tr>
+<th>Re-enter Password</th>
+<td><input type="password" name="confirm_password"></td>
+</tr>
+<tr>
+<th>Gender:</th>
+<td>
+Male<input type="radio" name="gender" value="male">
+Female<input type="radio" name="gender" value="female">
+</td>
+</tr>
+<tr>
+<th>Age:</th>
+<td><input type="number" name="age"></td>
+</tr>
+<tr>
+<th>Phone Number</th>
+<td><input type="tel" name="phone"></td>
+</tr>
+<tr>
+<th>Address</th>
+<td><textarea rows="8" cols="20" name="address"></textarea></td>
+</tr>
+<tr>
+<th>State</th>
+<td><input type="text" name="state"></td>
+</tr>
+<tr>
+<th>Country</th>
+<td>
+<select name="country">
+<option value="" selected disabled>Choose your country</option>
+<option value="1">India</option>
+<option value="2">Pakistan</option>
+</select>
+</td>
+</tr>
+<tr>
+<th>Languages Known</th>
+<td>
+English<input type="checkbox" name="languages[]" value="English">
+Kannada<input type="checkbox" name="languages[]" value="Kannada">
+Hindi<input type="checkbox" name="languages[]" value="Hindi">
+Telugu<input type="checkbox" name="languages[]" value="Telugu">
+</td>
+</tr>       
+<tr>
+<th>
+<input type="checkbox" name="declaration" id="declaration" value="true">Hereby I declare that all given details are true
+</th>
+</tr>
+<tr>
+<th>
+Login to <a href="https://www.example.com">Ethnus</a> website
+</th>
+</tr>
+</table>
+<br><br>
+<button type="submit" class="registerbtn">Register</button>
+</form>
+</body>
+</html>
